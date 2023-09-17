@@ -29,7 +29,12 @@ const copyFunction = useCallback(() => {
 },[password])
 
   return (
-    <div className='flex items-center justify-center h-screen p-5' style={{backgroundImage:'url("https://watermark.lovepik.com/photo/50054/1552.jpg_wh1200.jpg")'}}>
+    <div className='flex items-center justify-center h-screen p-5' 
+    style={{
+      backgroundImage:'url("https://watermark.lovepik.com/photo/50054/1552.jpg_wh1200.jpg")',
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center center"}}>
       <div className='bg-white bg-opacity-5 backdrop-blur-md rounded-md p-5'>
         <h1 className='text-white text-center font-bold text-3xl drop-shadow-md'>Password Generator</h1>
         <div className='flex'>
